@@ -1,0 +1,95 @@
+input[type="text"] {
+	height: 20px;
+	width: 150px;
+	margin: 2px 0px 2px 5px;
+}
+
+select {
+	height: 20px;
+	width: 150px;
+	margin: 2px 0px 2px 5px;
+}
+
+#expMonth, #expYear {
+	height: 20px;
+	width: 70px;
+	margin: 2px 0px 2px 5px;
+}
+
+/* CSS code to replace "Complete" Button text */	
+.completeButton {
+	font-size: 0px !important; 
+}
+	
+.completeButton:after {
+	font-size: 20px !important;
+	float: left !important;
+	content: "Place Order";  
+}
+
+/* This will change the button status to "Processing" once it's in processing state */
+.processingCompleteButton:after {
+	font-size: 20px !important;
+	float: left !important;
+	content: "Processing";  
+}
+
+/* CSS code to replace "Cancel" Button text */	
+.cancelButton {
+	font-size: 0px !important; 
+}
+	
+.cancelButton:after {
+	font-size: 20px !important;
+	float: left !important;
+	content: "Cancel Order";  
+}
+
+/* CSS code to replace "Amount" Label text */	
+.creAmountLabel {
+	visibility: hidden;
+}
+
+.creAmountLabel:before {
+	visibility: visible;
+	text-indent: -1000px;
+	content: "Payment Required:";  
+}
+
+/* CSS code to replace "Credit Card Number" Label text */	
+.creNumberLabel {
+	visibility: hidden;
+}
+
+.creNumberLabel:before {
+	visibility: visible;
+	text-indent: -1000px;
+	content: "Card Number";  
+}
+
+/* CSS code to hide "What's This" Link */
+.creCVV2WhatLink {
+display: none;
+}
+
+/* CSS code to replace "Expiration Date" Label text */	
+.creExpirationLabel {
+	visibility: hidden;
+}
+
+.creExpirationLabel:before {
+	visibility: visible;
+	text-indent: -1000px;
+	content: "Exp. Date (MM/YY)";  
+}
+
+/* CSS code to replace "Postal Code" Label text */	
+.creZipLabel {
+	visibility: hidden;
+}
+
+.creZipLabel:before {
+	visibility: visible;
+	text-indent: -1000px;
+	content: "ZIP Code";  
+}
