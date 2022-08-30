@@ -1,107 +1,298 @@
+/* CSS code to style the entire payment form/page */
+body {
+    font-family: "Arial";
+    font-size: 15px;
+    background-color: #f2f4f5;
+    color: #000000;
+}
+
+/*.hpsRow {
+    display: flex;
+}
+
+.hpsRow div {
+    flex: 50%;
+}*/
+
+select {
+    padding: 0px 10px;
+    border: 2px solid #297f9d;
+    color: #004861;
+    height: 52px;
+    background: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: "Gotham Bold";
+    text-align: left;
+    min-width: 100% !important;
+    display: block;
+    cursor: pointer;
+}
+
+#hpsExpirationRow {
+    position: relative;
+    border: 1px solid #297f9d;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 455px;
+}
+
+#hpsExpirationRow input {
+    height: 52px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #637a87;
+    background: none;
+    padding: 0 15px;
+    position: relative;
+    padding-top: 0;
+    padding-right: 5px !important;
+    font-weight: normal;
+    font-family: "Gotham Regular";
+    border-radius: 4px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+#hpsExpirationRow label {
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 20px;
+    position: absolute;
+    transform-origin: top left;
+    transform: translate(0, 14px) scale(1);
+    transition: all 0.1s ease-in-out;
+    color: #929ca9;
+    font-weight: normal;
+    font-family: "Gotham Regular";
+    width: 120%;
+}
+
+#hpsZipRow {
+    position: relative;
+    border: 1px solid #297f9d;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 455px;
+}
+
+#hpsZipRow input {
+    height: 52px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #637a87;
+    background: none;
+    padding: 0 15px;
+    position: relative;
+    padding-top: 0;
+    padding-right: 5px !important;
+    font-weight: normal;
+    font-family: "Gotham Regular";
+    border-radius: 4px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+#hpsZipRow label {
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 20px;
+    position: absolute;
+    transform-origin: top left;
+    transform: translate(0, 14px) scale(1);
+    transition: all 0.1s ease-in-out;
+    color: #929ca9;
+    font-weight: normal;
+    font-family: "Gotham Regular";
+    width: 120%;
+}
+
+#hpsNameRow.hpsRow, #hpsCVV2Row.hpsRow, #hpsNumberRow.hpsRow {
+    position: relative;
+    border: 1px solid #297f9d;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 455px;
+}
+
+#hpsNameRow.hpsRow input, #hpsCVV2Row.hpsRow input, #hpsNumberRow.hpsRow input {
+    height: 52px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #637a87;
+    background: none;
+    padding: 0 15px;
+    position: relative;
+    padding-top: 0;
+    padding-right: 5px !important;
+    font-weight: normal;
+    font-family: "Gotham Regular";
+    border-radius: 4px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+}
+
+#hpsNameRow.hpsRow label, #hpsCVV2Row.hpsRow label, #hpsNumberRow.hpsRow label {
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 20px;
+    position: absolute;
+    transform-origin: top left;
+    transform: translate(0, 14px) scale(1);
+    transition: all 0.1s ease-in-out;
+    color: #929ca9;
+    font-weight: normal;
+    font-family: "Gotham Regular";
+    width: 120%;
+}
+
+/* replace "1" with the number of the first field that you want to align horizontally */
+/*.form > *:nth-child(1),*/
+/* replace "2" with the number of the second field that you want to align horizontally */
+/*.form > *:nth-child(2) {
+    width: 47%;
+}
+
 .input {
-  position: relative;
-  height: 1.7em;
+    position: relative;
+    height: 1.7em;
 }
 
 .input__label {
-  position: absolute;
-  left: 0.3em;
-  top: 50%;
-  transform: translateY(-50%);
-}
+    position: absolute;
+    left: 0.3em;
+    top: 50%;
+    transform: translateY(-50%);
+}*/
 
-input[type="text"] {
-	height: 20px;
-	width: 150px;
-	margin: 2px 0px 2px 5px;
-}
+/*input[type="text"] {
+    height: 20px;
+    width: 150px;
+    margin: 2px 0px 2px 5px;
+}*/
 
 select {
-	height: 20px;
-	width: 150px;
-	margin: 2px 0px 2px 5px;
+    height: 20px;
+    width: 150px;
+    margin: 2px 0px 2px 5px;
 }
 
-#expMonth, #expYear {
-	height: 20px;
-	width: 70px;
-	margin: 2px 0px 2px 5px;
-}
+/*#expMonth, #expYear {
+    height: 20px;
+    width: 70px;
+    margin: 2px 0px 2px 5px;
+}*/
 
-/* CSS code to replace "Complete" Button text */	
+/* CSS code to replace "Complete" Button text */
 .completeButton {
-	font-size: 0px !important; 
+    font-size: 0px !important;
 }
-	
+
 .completeButton:after {
-	font-size: 20px !important;
-	float: left !important;
-	content: "Place Order";  
+    font-size: 20px !important;
+    float: left !important;
+    content: "Place Order";
 }
 
 /* This will change the button status to "Processing" once it's in processing state */
 .processingCompleteButton:after {
-	font-size: 20px !important;
-	float: left !important;
-	content: "Processing";  
+    font-size: 20px !important;
+    float: left !important;
+    content: "Processing";
 }
 
-/* CSS code to replace "Cancel" Button text */	
+/* CSS code to replace "Cancel" Button text */
 .cancelButton {
-	font-size: 0px !important; 
+    font-size: 0px !important;
 }
-	
+
 .cancelButton:after {
-	font-size: 20px !important;
-	float: left !important;
-	content: "Cancel Order";  
+    font-size: 20px !important;
+    float: left !important;
+    content: "Cancel Order";
 }
 
-/* CSS code to replace "Amount" Label text */	
-.creAmountLabel {
-	visibility: hidden;
+/* CSS code to replace "Amount" Label text */
+#amountLabelText {
+    visibility: hidden;
 }
 
-.creAmountLabel:before {
-	visibility: visible;
-	text-indent: -1000px;
-	content: "Payment Required:";  
+#amountLabelText:before {
+    visibility: visible;
+    text-indent: -1000px;
+    content: "Payment Required:";
 }
 
-/* CSS code to replace "Credit Card Number" Label text */	
-.creNumberLabel {
-	visibility: hidden;
+/* CSS code to replace "Credit Card Number" Label text */
+#hpsNumberLabel {
+    visibility: hidden;
 }
 
-.creNumberLabel:before {
-	visibility: visible;
-	text-indent: -1000px;
-	content: "Card Number";  
+#hpsNumberLabel:before {
+    visibility: visible;
+    text-indent: -1000px;
+    content: "Card Number";
 }
 
 /* CSS code to hide "What's This" Link */
-.creCVV2WhatLink {
-display: none;
+.hpsCVV2WhatLink {
+    display: none;
 }
 
-/* CSS code to replace "Expiration Date" Label text */	
-.creExpirationLabel {
-	visibility: hidden;
+/* CSS code to replace "Expiration Date" Label text */
+#hpsExpirationLabel {
+    visibility: hidden;
 }
 
-.creExpirationLabel:before {
-	visibility: visible;
-	text-indent: -1000px;
-	content: "Exp. Date (MM/YY)";  
+#hpsExpirationLabel:before {
+    visibility: visible;
+    text-indent: -1000px;
+    content: "Exp. Date (MM/YY)";
 }
 
-/* CSS code to replace "Postal Code" Label text */	
-.creZipLabel {
-	visibility: hidden;
+/* CSS code to replace "Postal Code" Label text */
+#hpsZipText {
+    visibility: hidden;
 }
 
-.creZipLabel:before {
-	visibility: visible;
-	text-indent: -1000px;
-	content: "ZIP Code";  
+#hpsZipText:before {
+    visibility: visible;
+    text-indent: -1000px;
+    content: "ZIP Code";
+}
+
+.completeButton {
+    min-width: 197px;
+    min-height: 52px;
+    background: #004861;
+    color: #e7ed67;
+    padding: 15px;
+    border-radius: 50px;
+    font-size: 18px !important;
+    line-height: 20px;
+    cursor: pointer !important;
+    font-family: Gotham Medium;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    border: none;
+}
+
+.cancelButton {
+    background-color: #f2f4f5;
+    border: none;
+    color: #004861;
+    text-decoration: underline;
+    font-size: 16px !important;
+    font-family: "Gotham Bold";
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    margin: 0px 20px;
+    text-decoration-color: #297f9d;
 }
