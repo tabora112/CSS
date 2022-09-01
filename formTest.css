@@ -84,7 +84,7 @@ body {
 }
 
 #hpsZipRow input {
-    height: 52px;
+    max-height: 52px;
     font-size: 16px;
     line-height: 30px;
     color: #637a87;
@@ -131,8 +131,9 @@ body {
     border: 1px solid #297f9d;
     border-radius: 4px;
     margin-bottom: 20px;
-    width: 100%;
+    /*width: 100%;*/
     max-width: 455px;
+    display: flex;
 }
 
 #hpsNameRow.hpsRow:hover, #hpsCVV2Row.hpsRow:hover, #hpsNumberRow.hpsRow:hover {
@@ -150,7 +151,7 @@ body {
 }
 
 #hpsNameRow.hpsRow input, #hpsCVV2Row.hpsRow input, #hpsNumberRow.hpsRow input {
-    height: 52px;
+    max-height: 52px;
     font-size: 16px;
     line-height: 30px;
     color: #637a87;
