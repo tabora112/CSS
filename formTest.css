@@ -72,9 +72,9 @@ body {
 */
 #hpsZipRow {
     position: relative;
-    border: 1px solid #297f9d;
+    /*border: 1px solid #297f9d;
     border-radius: 4px;
-    margin-bottom: 20px;
+    margin-bottom: 20px;*/
     /*width: 100%;*/
     max-width: 455px;
 }
@@ -95,9 +95,16 @@ body {
     padding-right: 5px !important;
     font-weight: normal;
     font-family: "Gotham Regular";
+    border: 1px solid #297f9d;
     border-radius: 4px;
-    border: none;
+    margin-bottom: 20px;
     /*width: 100%;*/
+    cursor: pointer;
+}
+
+#hpsZipRow input:hover {
+    border-color: #297f9d;
+    border-width: 2px;
     cursor: pointer;
 }
 
@@ -128,26 +135,26 @@ body {
 
 #hpsNameRow.hpsRow, #hpsCVV2Row.hpsRow, #hpsNumberRow.hpsRow {
     position: relative;
-    border: 1px solid #297f9d;
-    border-radius: 4px;
+    /*border: 1px solid #297f9d;
+    border-radius: 4px;*/
     margin-bottom: 20px;
     /*width: 100%;*/
     max-width: 455px;
     display: flex;
 }
 
-#hpsNameRow.hpsRow:hover, #hpsCVV2Row.hpsRow:hover, #hpsNumberRow.hpsRow:hover {
+/*#hpsNameRow.hpsRow:hover, #hpsCVV2Row.hpsRow:hover, #hpsNumberRow.hpsRow:hover {
     border-color: #297f9d;
     border-width: 2px;
     cursor: pointer;
-}
+}*/
 
 /*#hpsNameRow.hpsRow:active input, #hpsCVV2Row.hpsRow:active input, #hpsNumberRow.hpsRow:active input {
     padding-top: 18px !important;
 }*/
 
 #hpsNameRow.hpsRow:focus-within input, #hpsCVV2Row.hpsRow:focus-within input, #hpsNumberRow.hpsRow:focus-within input {
-    padding-top: 18px !important;
+    /*padding-top: 18px !important;*/
 }
 
 #hpsNameRow.hpsRow input, #hpsCVV2Row.hpsRow input, #hpsNumberRow.hpsRow input {
@@ -162,9 +169,16 @@ body {
     padding-right: 5px !important;
     font-weight: normal;
     font-family: "Gotham Regular";
+    border: 1px solid #297f9d;
     border-radius: 4px;
-    border: none;
     /*width: 100%;*/
+    cursor: pointer;
+    padding-top: 18px !important;
+}
+
+#hpsNameRow.hpsRow input:hover, #hpsCVV2Row.hpsRow input:hover, #hpsNumberRow.hpsRow input:hover {
+    border-color: #297f9d;
+    border-width: 2px;
     cursor: pointer;
 }
 
@@ -388,4 +402,8 @@ select {
 
 select:hover, select:focus {
     border-color: #001e29;
+}
+
+#expYear {
+    margin-left: 15px;
 }
