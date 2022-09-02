@@ -6,6 +6,10 @@ body {
     color: #000000;
 }
 
+#theForm {
+    max-width: 600px;
+}
+
 /*.hpsRow {
     display: flex;
 }
@@ -70,7 +74,11 @@ body {
     width: 120%;
 }
 */
-#hpsZipRow {
+
+/* Zip Code Input */
+#hpsNameRow.hpsRow input:hover, #hpsCVV2Row.hpsRow input:hover, #hpsNumberRow.hpsRow input:hover,
+
+#hpsNameRow, #hpsCVV2Row, #hpsNumberRow, #hpsZipRow {
     position: relative;
     /*border: 1px solid #297f9d;
     border-radius: 4px;
@@ -79,11 +87,11 @@ body {
     max-width: 455px;
 }
 
-#hpsZipRow input {
+#hpsNameRow input, #hpsCVV2Row input, #hpsNumberRow input, #hpsZipRow input {
     padding-top: 18px !important;
 }
 
-#hpsZipRow input {
+#hpsNameRow input, #hpsCVV2Row input, #hpsNumberRow input, #hpsZipRow input {
     max-height: 52px;
     font-size: 16px;
     line-height: 30px;
@@ -97,32 +105,39 @@ body {
     font-family: "Gotham Regular";
     border: 1px solid #297f9d;
     border-radius: 4px;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
     /*width: 100%;*/
     cursor: pointer;
 }
 
-#hpsZipRow input:hover {
+#hpsZipRow input {
+    margin-bottom: 20px;
+}
+
+#hpsNameRow input:hover, #hpsCVV2Row input:hover, #hpsNumberRow input:hover, #hpsZipRow input:hover {
     border-color: #297f9d;
     border-width: 2px;
     cursor: pointer;
 }
 
-#hpsZipRow label {
-    padding: 0 20px;
+#hpsNameRow label, #hpsCVV2Row label, #hpsNumberRow label, #hpsZipRow label {
+    padding: 0px 22px;
     font-size: 16px;
     line-height: 20px;
     position: absolute;
     transform-origin: top left;
-    transform: translate(0, 14px) scale(1);
+    transform: translate(0, 4px) scale(0.75);
     transition: all 0.1s ease-in-out;
-    color: #929ca9;
-    font-weight: normal;
+    color: #8096a2;
+    /*font-weight: normal;*/
     font-family: "Gotham Regular";
     width: 120%;
+    font-weight: 600;
+    z-index: 999;
+    text-align: left;
 }
 
-#hpsZipRow label {
+/*#hpsZipRow label {
     padding: 0px 22px;
     transform: translate(0, 4px) scale(0.75);
     color: #8096a2;
@@ -130,7 +145,7 @@ body {
     z-index: 999;
     text-align: left;
 }
-
+*/
 /** Inputs */
 
 #hpsNameRow.hpsRow, #hpsCVV2Row.hpsRow, #hpsNumberRow.hpsRow {
@@ -157,7 +172,8 @@ body {
     /*padding-top: 18px !important;*/
 }
 
-#hpsNameRow.hpsRow input, #hpsCVV2Row.hpsRow input, #hpsNumberRow.hpsRow input {
+/* not needed since we are not transforming label */
+/*#hpsNameRow.hpsRow input, #hpsCVV2Row.hpsRow input, #hpsNumberRow.hpsRow input {
     max-height: 52px;
     font-size: 16px;
     line-height: 30px;
@@ -170,9 +186,9 @@ body {
     font-weight: normal;
     font-family: "Gotham Regular";
     border: 1px solid #297f9d;
-    border-radius: 4px;
+    border-radius: 4px;*/
     /*width: 100%;*/
-    cursor: pointer;
+    /*cursor: pointer;
     padding-top: 18px !important;
 }
 
@@ -231,42 +247,9 @@ body {
     font-weight: 600;
     z-index: 999;
     text-align: left;
-}
-
-
-/* replace "1" with the number of the first field that you want to align horizontally */
-/*.form > *:nth-child(1),*/
-/* replace "2" with the number of the second field that you want to align horizontally */
-/*.form > *:nth-child(2) {
-    width: 47%;
-}
-
-.input {
-    position: relative;
-    height: 1.7em;
-}
-
-.input__label {
-    position: absolute;
-    left: 0.3em;
-    top: 50%;
-    transform: translateY(-50%);
 }*/
-/*input[type="text"] {
-    height: 20px;
-    width: 150px;
-    margin: 2px 0px 2px 5px;
-}*/
-/*select {
-    height: 20px;
-    width: 150px;
-    margin: 2px 0px 2px 5px;
-}*/
-/*#expMonth, #expYear {
-    height: 20px;
-    width: 70px;
-    margin: 2px 0px 2px 5px;
-}*/
+
+/* Amount Input */
 
 /* CSS code to replace "Amount" Label text */
 #amountLabelText {
@@ -277,6 +260,49 @@ body {
     visibility: visible;
     text-indent: -1000px;
     content: "Payment Required:";
+}
+
+#hpsAmountRow {
+    position: relative;
+    width: 500px;
+    overflow: hidden;
+}
+
+#hpsAmountLabel {
+    width: 190px;
+    float: left;
+    overflow: hidden;
+}
+
+#hpsAmountRow div:nth-child(2) {
+    overflow: hidden;
+}
+
+#hpsAmountRow input {
+    max-height: 52px;
+    font-size: 16px;
+    line-height: 30px;
+    color: black;
+    background: none;
+    padding: 0 15px;
+    position: relative;
+    padding-top: 0;
+    padding-right: 5px !important;
+    font-weight: normal;
+    font-family: "Gotham Regular";
+    border: none;
+    margin-bottom: 20px;
+    /*width: 100%;*/
+    cursor: pointer;
+}
+
+#hpsAmountRow label {
+    max-height: 52px;
+    font-size: 16px;
+    line-height: 30px;
+    color: black;
+    font-weight: bold;
+    font-family: "Gotham Regular";
 }
 
 /* CSS code to replace "Credit Card Number" Label text */
@@ -303,7 +329,7 @@ body {
 #hpsExpirationLabel:before {
     visibility: visible;
     text-indent: -1000px;
-    content: "Exp. Date (MM/YY)";
+    content: "Expiration Date:";
 }
 
 /* CSS code to replace "Postal Code" Label text */
@@ -406,4 +432,21 @@ select:hover, select:focus {
 
 #expYear {
     margin-left: 15px;
+}
+
+/* Card Type */
+
+label[for=ccType] {
+    visibility: hidden;
+}
+
+label[for=ccType]:before {
+    visibility: visible;
+    text-indent: -1000px;
+    content: "Card Type:";
+}
+
+#hpsTypeLabel {
+    font-weight: bold;
+    font-size: 16px;
 }
